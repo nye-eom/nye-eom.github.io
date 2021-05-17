@@ -19,7 +19,7 @@ title: What's your title
 hide_title: true
 feature-img: assets/img/feature-img/story.jpeg
 author: mhagnumdw
-tags: [Test, Lorem]
+#tags: [Test, Lorem]
 ```
 
 You may wonder, why is there a title when you are not actually displaying it. <br>
