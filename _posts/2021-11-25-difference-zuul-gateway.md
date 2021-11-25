@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spring Cloud Netflix Ribbon vs Zuul"
+title: "Spring Cloud Netflix Zuul vs Gateway"
 author: nyeom
 tags: [Java,Spring Framework,Cloud]
 ---
@@ -88,8 +88,8 @@ public class ZuulLoggingFilter extends ZuulFilter {
 }
 ```
 
-### Spring Cloud APIGateway - *.yaml
-Spring Cloud APIGateway의 경우, 비동기방식 내장서버인 Netty가 실행된다. Spring Cloud APIGateway의 경우, 각 마이크로 서비스 어플리케이션에서 정의한 Controller의 RequestMapping 값을 기준으로 정의한다.
+### Spring Cloud Gateway - *.yaml
+Spring Cloud Gateway 경우, 비동기방식 내장서버인 Netty가 실행된다. Spring Cloud Gateway 경우, 각 마이크로 서비스 어플리케이션에서 정의한 Controller의 RequestMapping 값을 기준으로 정의한다.
 ```yml
 server:
   port: 8000
