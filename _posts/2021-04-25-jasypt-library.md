@@ -8,19 +8,14 @@ tags: [Java,Spring Framework]
 
 [jasypt](http://www.jasypt.org/)는 개발자가 최소한의 노력으로 암호화 작업에 대한 깊은 지식없이 애플리케이션 기본 정보를 암호화할 수 있도록 지원하는 자바 기반 라이브러리이다. 보안 취약점 정의에 부합하여 해당 라이브러리를 도입하게 되었다.
 
-### dependencies-app.gradle 
+### dependencies 정보
 ```yml
-compile rootProject.ext.dependencies.jasypt
-compile rootProject.ext.dependencies.bcprov
+implementation group: 'org.jasypt', name: 'jasypt', version: '1.9.3'
+implementation group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.46'
+
 ```
 
-### dependencies-variable.gradle 
-```yml
-jasypt                  : "org.jasypt:jasypt-spring31:1.9.3" ,
-bcprov                  : "org.bouncycastle:bcprov-jdk16:1.45"
-```
-
-### app-datasource.xml 
+### datasource 정보 
 ```xml
 
 <bean id="bouncyCastleProvider" class="org.bouncycastle.jce.provider.BouncyCastleProvider"/>
